@@ -1,0 +1,19 @@
+;;;  -*- Hen -*-
+
+((egg "optical-flow.egg")
+ (category math)
+ (author "Andrei Barbu")
+ (maintainer "Andrei Barbu")
+ (license "LGPL")
+ (doc-from-wiki)
+ (synopsis "bindings for reading / computing optical flow")
+ (depends setup-helper miscmacros check-errors condition-utils
+          define-structure scheme2c-compatibility random-bsd
+          traversal ffmpeg-video libzip matlab image-processing
+          (imlib2 "0.14") linear-algebra foreigners)
+ (test-depends test)
+ (files "optical-flow-examples.scm"
+        "optical-flow.meta" 
+        "optical-flow.release-info"
+        "optical-flow.scm" 
+        "optical-flow.setup"))
